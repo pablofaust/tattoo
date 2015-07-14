@@ -1,0 +1,344 @@
+@import url(http://fonts.googleapis.com/css?family=Poly|Montserrat);
+
+/* GENERAL */
+
+body {
+	overflow-x: hidden;
+}
+
+h1, h2 {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-family: 'Montserrat', Verdana, sans-serif; /* Change this setting if you want to change the title's font (always provide three in case of disfunction) */
+}
+
+/* MENU */
+
+.navbar {
+	border: none; /* Change this setting if you want to add borders to the menu, for instance : solid 1px #000 (thick white borders) */
+	z-index: 1000;
+	position: fixed;
+	width: 100%;
+}
+.navbar-default {
+	background: transparent; /* Change this setting if you want the menu to have a background-color, for instance #000 would be black */
+}
+.navbar-brand {
+	padding: 20px;
+	height: 100%;
+	margin-top: 5px;
+}
+.navbar-brand h1 {
+	font-family: 'Poly', Verdana, serif;
+	display: inline-block;
+	font-size: 20px; /* Change this setting if you want to have a smaller or bigger title */
+	text-transform: uppercase; /* Change this setting if you don't want your title to be only capital letters */
+	vertical-align: middle;
+	margin-top: -10px;
+	color: #fff; /* Change this setting to modify the title's background-color */
+	letter-spacing: 2px; /* Change this setting if you want to modify the space between the title's letters */
+}
+.navbar-header button {
+	border: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-header:hover {
+	background-color: #000; /* Change this setting if you want to change the title's background-color when hovered */
+}
+.navbar-header:hover h1 {
+	color: #fff; /* Change this setting if you want to change the title's color when hovered */
+}
+.navbar-default .navbar-nav>li>a {
+	font-family: 'Poly', 'Helvetica Neue', sans-serif; /* Change this setting if you want to change the font of the menu's links (always provide three fonts in case of disfunction) */
+	text-transform: uppercase; /* Change this setting if you don't want your menu's links to be only in capital letters */
+	letter-spacing: 1px; /* Change this setting if you want to modify the space between the letters of the menu's links */
+	color: #fff; /* Change this setting if you want to change the color of the menu's links */
+}
+.navbar-default .navbar-nav>.active>a:hover,  
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus  {
+	background: #000; /* Change this setting if you want to change the background-color of the menu's links when hovered */
+	color: #fff; /* Change this setting if you want to change the color of the menu's links when hovered */
+}
+.navbar-right {
+	margin-top: 8px;
+}
+.navbar-right li {
+	margin-right: 30px; /* Change this setting if you want to modify the space between the menu's links (not recommended because it could alterate the way your website is displayed on smaller or bigger devices) */
+}
+
+/* PROJECT MENU */
+
+.menu-3 .navbar-nav>li>a {
+	color: #000; /* Change this setting if you want to change the color of the menu's links on project's pages*/
+}
+.menu-3 .navbar-brand h1 {
+	color: #000; /* Change this setting if  you want to change the color of the title on project's pages */
+}
+.menu-3 .navbar-header:hover h1 {
+	color: #fff; /* Change this setting if you want to change the background color of the title when hovered on project's pages */
+}
+
+/* SLIDER */
+
+.slider-displayer {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+.slider {
+  	height: 100%;
+  	width: 100%;
+}
+.slider .slide {
+ 	height: 100%;
+  	width: 101%;
+  	vertical-align: middle;
+  	text-align: center;
+  	position: absolute;
+  	display: none;
+}
+.slider .slide img {
+  	min-height: inherit;
+  	min-width: inherit;
+  	max-width: 99%;
+  	max-height: 100%;
+  	position: relative;
+  	display: inline-block;
+  	vertical-align: middle;
+}
+.cover {
+	width: 100%;
+	height: 100%;
+	background: no-repeat center center;
+	background-size: cover;
+}
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.chevrons {
+	position: absolute;
+  	top: 50%;
+  	font-size: 50px; /* Change this setting if you want to change the size of the slider's arrows */
+  	margin-top: -50px; /* This value should ALWAYS be the same as the arrows's font-size, up here */
+  	color: #fff; /* Change this setting if you want to modify the color of the slider's arrows */
+	cursor: pointer;
+}
+.chevrons>span {
+	position: absolute;
+	z-index: 100;
+}
+.chevrons .chevron-left {
+	left: 7.5%;
+}
+.chevrons .chevron-right{
+	right: 7.5%;
+}
+.chevron-left:hover, .chevron-right:hover {
+	color: #000; /* Change this setting if you want to modify the color of the slider's arrows when hovered */
+}
+
+/* PROJECT */
+
+.slider-displayer-project {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	background-color: #EE9EA5; /* Change this setting if you want to modify the general background color of the project's pages */
+}
+.wrapper {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	padding: 6% 15% 4% 15%; /* You can play with these values to change the space occupied by the project's slider, but it's NOT RECOMMENDED */
+}
+.slider-project {
+	position: relative;
+  	vertical-align: middle;
+  	height: 100%;
+  	width: 100%;
+}
+.slider-project .slide {
+  	height: 100%;
+  	width: 100%;
+  	text-align: center;
+  	position: absolute;
+  	vertical-align: middle;
+  	display: none;
+}
+.slider-project .slide img {
+    min-height: inherit;
+	min-width: inherit;
+	max-width: 100%;
+	max-height: 100%;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+.slider-project .chevrons .chevron-left {
+	left: 6%;
+}
+.slider-project .chevrons .chevron-right {
+	right: 6%;
+}
+.presentation {
+	position: fixed;
+	padding: 0;
+	height: 100%;
+	width: 64%;
+	top: 75%; /* Reduce the value of this setting if you need more space for your project's subtitle */
+	left: 18%;
+}
+.presentation .title {
+	width: 100%;
+	height: 100%;
+}
+.presentation .title h2 {
+	font-family: 'Montserrat', Verdana, sans-serif; /* Change this setting if you want to change the font of the project's title (always provide three fonts in case of disfunction) */
+	text-transform: uppercase; /* Change this setting if you don't want the project's title to be only in capital letters */
+	color: #fff; /* Change this setting if you want to change the color of the project's title */
+	letter-spacing: 2px; /* Change this setting if you want to modify the space between the letters of the project's title */
+	font-size: 24px; /* Change this setting if you want to change the size of the project's title */
+	width: 100%; /* Change this setting if you want to change the width of the underline between the project's title and the project's subtitle (not recommended) */
+	border-bottom: solid 3px #fff; /* Change this setting if you want to change the thickness or the color of the underline between the project's title and the project's subtitle */
+	padding-bottom: 10px; /* Change this setting if you want to modify the space between the project's title and the underline */
+}
+.presentation .title h3{
+	font-family: 'Roboto', Verdana, sans-serif; /* Change this setting if you want to change the font of the project's subtitle (always provide three fonts in case of disfunction) */
+	color: #fff; /* Change this setting if you want to change the color of the project's subtitle */
+	font-weight: 100; /* Change this setting if you want to change the thickness of the project's subtitle (100, 300 or 400) */
+	letter-spacing: 1px; /* Change this setting if you want to modify the space between the letters of the project's subtitle */
+	text-align: justify;
+	font-size: 20px; /* Change this setting if you want to change the size of the project's subtitle */
+	margin-top: 10px; /* Change this setting if you want to modify the space between the underline and the project's subtitle */
+}
+
+/* MOSAICS */
+
+.blocks {
+	padding: 0;
+	width: 100%;
+}
+.blocks .row .column {
+	padding: 0;
+	background-color: #000;
+}
+.blocks .column>div {
+	height: 375px; /* Change this setting if you want to change the height of the blocks (not recommended)*/
+	background: no-repeat center center;
+	background-size: cover;
+}
+.blocks .column .media-block {
+	padding: 20% 10% 0% 10%; /* Change this setting if you want to modify the total space occupied by the media blocks (not recommended) (% of space above, % of space on the right, % of space below, % of space on the left) */
+}
+#category-1 .column .media-block {
+	background-color: #000; /* Change this setting if you want to modify the general background color of the first category */
+}
+#category-2 .column .media-block {
+	background-color: #90D5D9; /* Change this setting if you want to modify the general background color of the second category */
+}
+#category-3 .column .media-block { 
+	background-color: #8ED3BA;/* Change this setting if you want to modify the general background color of the third category */
+}
+.blocks img {
+	width: 100%;
+}
+
+/* ABOUT & CONTACT */
+
+.about-body {
+	position: fixed;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+.background-img {
+	height: 100%;
+	width: 100%;
+}
+.background-img>div {
+	height: 100%;
+	background: no-repeat center center;
+	background-size: cover;
+}
+.about-content {
+	position: absolute;
+	padding: 30% 10% 3% 10%;
+	width: 100%;
+	height: 100%;
+}
+.about-content .text {
+	width: 100%;
+	height: auto;
+	border: solid 4px #fff; /* Change this setting if you want to change the thickness or color of the "About" section's text area */
+	padding: 20px; /* Change this setting if you want to modify the space between the text and the borders of the area of the "About" section */
+	background-color: rgba(0, 0, 0, 0.1); /* Change this setting if you want to change the opacity (here : 0.2) or color of the text area's background (#000 for instance) */
+}
+.about-content .text p {
+	font-family: 'Roboto', Verdana, sans-serif; /* Change this setting if you want to change the font of the "About" section's text (always provide three fonts in case of disfunction) */
+	color: #fff; /* Change this setting if you want to change the color of the "About" section's text */
+	letter-spacing: 1px; /* Change this setting if you want to modify the space between the letters of the "About" section's text */
+	text-align: justify; /* Change this setting if you want to change the alignment of the "About" section'text (can be : left, right, center or justify) */
+	font-size: 18px; /* Change this setting if you want to change the size of the "About" section's text */
+	font-weight: 300; /* Change this setting if you want to change the thickness of the "About" section's text (can be : 100, 300 or 400)*/
+}
+.about-content a {
+	text-decoration: none; 
+	color: #fff; /* Change this setting if you want to change the color of the "About" section's links */
+	font-weight: 400; /* Change this setting if you want to change the thicknes of the "About" secton's links */
+}	
+.contact-content {
+	position: absolute;
+	padding: 25% 30% 3% 30%;
+	width: 100%;
+	height: 100%;
+}
+.contact-content .text {
+	width: 100%;
+	height: auto;
+	border: solid 4px #fff; /* Change this setting if you want to change the thickness or color of the "Contact" section's text area */
+	padding: 20px; /* Change this setting if you want to modify the space between the text and the borders of the area of the "Contact" section */
+	background-color: rgba(0, 0, 0, 0.2); /* Change this setting if you want to change the opacity (here : 0.2) or color of the "About" section's text area's background (#000 for instance) */
+	text-align: center; /* Change this setting if you want to change the alignment of the "Contact" section'text (can be : left, right, center or justify) */
+}
+.contact-content .text h2 {
+	font-family: 'Poly', Verdana, sans-serif; /* Change this setting if you want to change the font of the "Contact" section's title (always provide three fonts in case of disfunction) */
+	font-weight: 300; /* Change this setting if you want to change the thickness of the "Contact" section's title (can be : 100, 300 or 400)*/
+	color: #fff; /* Change this setting if you want to change the color of the "Contact" section's title */
+	font-size: 26px; /* Change this setting if you want to change the size of the "Contact" section's title */
+	letter-spacing: 3px; /* Change this setting if you want to modify the space between the letters of the "About" section's title */
+	text-transform: uppercase; /* Change this setting if you want to don't want the "Contact" section's text to be only in capital letters */
+}
+.contact-content .text h3, .contact-content .text h4 {
+	font-family: 'Poly', Verdana, sans-serif; /* Change this setting if you want to change the font of the "Contact" section's text (always provide three fonts in case of disfunction) */
+	font-weight: 100; /* Change this setting if you want to change the thickness of the "Contact" section's text (can be : 100, 300 or 400)*/
+	color: #fff; /* Change this setting if you want to change the color of the "Contact" section's text */
+	font-size: 20px; /* Change this setting if you want to change the size of the "Contact" section's text */
+	letter-spacing: 1px; /* Change this setting if you want to modify the space between the letters of the "Contact" section's text */
+}
+.contact-content .text h4 strong, .contact-content .text h3 strong {
+	letter-spacing: 2px; /* Change this setting if you want to modify the space between the letters of the "Contact" section's important text */
+}
+.contact-content .text a:hover {
+	text-decoration: none;
+}
+.contact-content .text h3:hover {
+	font-weight: 300; /* Change this setting if you want to change the enlargement of the title when hovered */
+}
+.contact-content .fa {
+	color: #fff; /* Change this setting if you want to modify the color of the "Contact" section's social icons */
+	margin-left: 10px; /* Change this setting if you want to modify the space between the social icons of the "Contact" section */
+	margin-top: 10px; /* Change this setting if you want to modify the space between the social icons and the text of the "Contact" section */
+}
+.description {
+	border: solid 2px #fff;
+}
