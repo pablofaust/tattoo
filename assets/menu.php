@@ -13,13 +13,28 @@
 		<ul class="nav navbar-nav navbar-right">
 
 			<!-- This is the first link of the menu -->
-			<li>
-				<a href="<?php echo $url ?>category1">Our Tattoos</a>
-			</li>
+			<li class="dropdown">
+          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perforaciones</span></a>
+          		<ul class="dropdown-menu">
+		            <li><a href="<?php echo $url ?>category1">2015</a></li>
+		            <li><a href="<?php echo $url ?>category1">2014</a></li>
+		            <li><a href="<?php echo $url ?>category1">2013</a></li>
+	          </ul>
+	        </li>
+
+			<!-- This is the first link of the menu -->
+			<li class="dropdown">
+          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tatuajes</span></a>
+          		<ul class="dropdown-menu">
+		            <li><a href="<?php echo $url ?>category1">Tatuador 1</a></li>
+		            <li><a href="<?php echo $url ?>category1">Tatuador 2</a></li>
+		            <li><a href="<?php echo $url ?>category1">Tatuador 3</a></li>
+	          </ul>
+	        </li>
 
 			<!-- This is the fourth link of the menu -->
 			<li>
-				<a href="<?php echo $url ?>contact">About us</a>
+				<a href="<?php echo $url ?>contact">Contacto</a>
 			</li>
 			
 		</ul>

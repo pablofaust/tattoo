@@ -45,7 +45,7 @@ h1, h2 {
 	background-color: #fff;
 }
 .navbar-header:hover {
-	background-color: #000; /* Change this setting if you want to change the title's background-color when hovered */
+	background-color: #8F0316; /* Change this setting if you want to change the title's background-color when hovered */
 }
 .navbar-header:hover h1 {
 	color: #fff; /* Change this setting if you want to change the title's color when hovered */
@@ -62,7 +62,7 @@ h1, h2 {
 .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus  {
-	background: #000; /* Change this setting if you want to change the background-color of the menu's links when hovered */
+	background: #8F0316; /* Change this setting if you want to change the background-color of the menu's links when hovered */
 	color: #fff; /* Change this setting if you want to change the color of the menu's links when hovered */
 }
 .navbar-right {
@@ -70,6 +70,26 @@ h1, h2 {
 }
 .navbar-right li {
 	margin-right: 30px; /* Change this setting if you want to modify the space between the menu's links (not recommended because it could alterate the way your website is displayed on smaller or bigger devices) */
+}
+.navbar-default .navbar-nav > .open >a {
+	color: #fff;
+	background-color: #8F0316;
+}
+.navbar-nav > li > .dropdown-menu {
+	background-color: #8F0316;
+	width: 100%;
+	min-width: inherit;
+	margin-top: 5px;
+	text-align: center;
+	left: auto;
+	right: auto;
+}
+.dropdown-menu > li > a {
+	color: #fff;
+	font-family: 'Poly', 'Helvetica Neue', serif;
+}
+.dropdown-menu > li > a:hover {
+	color: #000;
 }
 
 /* PROJECT MENU */
@@ -143,7 +163,7 @@ h1, h2 {
 	right: 7.5%;
 }
 .chevron-left:hover, .chevron-right:hover {
-	color: #000; /* Change this setting if you want to modify the color of the slider's arrows when hovered */
+	color: #8F0316; /* Change this setting if you want to modify the color of the slider's arrows when hovered */
 }
 
 /* PROJECT */
